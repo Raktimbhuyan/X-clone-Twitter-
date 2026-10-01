@@ -1,0 +1,17 @@
+@import "tailwindcss";
+body{
+  background-color: black;
+  color: white;
+}
+.Cr7{
+  font-family: "Poppins", sans-serif;;
+}
+.hr{
+    font-family: "Poppins", sans-serif;;
+}
+.search{
+  font-family: "Poppins", sans-serif;;
+}
+.para{
+  font-family: "Poppins", sans-serif;;
+}
