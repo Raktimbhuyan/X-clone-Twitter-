@@ -1,11 +1,9 @@
 function App() {
   return (
-    <div className="w-full">
-    <div className="flex w-full justify-center">
-      <div className="w-[22%] shrink-0">
-      <div className="first mx-5 h-fit shrink-0 sticky top-0">
-        <div className="items flex-col  space-y-4 text-xl">
-          <svg viewBox="0 0 24 24" aria-hidden="true" className="hover:cursor-pointer invert w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"></path></g></svg>
+    <div className="flex w-full justify-center min-h-screen">
+      <div className="first h-fit shrink-0 sticky top-0 w-[22%] my-3 hidden lg:block">
+        <div className="items flex-col  space-y-4 text-xl justify-items-center-safe">
+          <svg viewBox="0 0 24 24" aria-hidden="true" className="relative right-25 hover:cursor-pointer invert w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"></path></g></svg>
           <ul className="space-y-4 relative">
             <li className="flex gap-3 font-bold hover:cursor-pointer"><span className="material-symbols-outlined">
               home
@@ -39,16 +37,14 @@ function App() {
             >
               account_circle
             </span>
-            <div><h1 className="text-lg font-bold hover: cursor-pointer">Monkey D Luffy</h1><div className="text-sm text-gray-400 hover: cursor-pointer">@MonkeyDLuffy9d</div></div>
+            <div className="text-lg font-bold hover: cursor-pointer">Monkey D Luffy<div className="text-sm text-gray-400 hover: cursor-pointer">@MonkeyDLuffy9d</div></div>
             <span className="material-symbols-outlined mx-3 my-3 hover: cursor-pointer">
               more_horiz
             </span>
           </div>
         </div>
       </div>
-      </div>
-      <div className="w-[48%]">
-      <div className="sec flex-1 border-x border-gray-800 min-w-0">
+      <div className="sec flex-1 border-x border-gray-800 min-w-0 w-[48%] h-full">
         <div className="itms relative">
           <div className="sticky top-0 backdrop-blur z-10">
             <ul className="flex px-4 py-1  m-1 justify-between text-gray-400 hover: cursor-pointer">
@@ -76,8 +72,9 @@ function App() {
             </span>
             <div className="text-sm font-bold">Everyone can reply</div>
           </div>
-          <div className="linee w-130 border border-gray-800 mx-10 my-3"></div>
-          <div className="icons px-13 py-2"><ul className="flex gap-4 relative">
+          <div className="linee w-3/4 border border-gray-800 mx-10 my-3"></div>
+          <div className="flex justify-between">
+          <ul className="flex gap-6 relative mx-12 py-2">
             <li><span className="material-symbols-outlined hover:cursor-pointer hover:rounded-4xl hover:bg-gray-600">
               image
             </span></li>
@@ -100,14 +97,17 @@ function App() {
             <li><span className="material-symbols-outlined hover:cursor-pointer hover:rounded-4xl hover:bg-gray-600">
               flag_2
             </span></li>
-            <li><button className="bg-gray-600 rounded-full w-18 h-9 relative left-30 font-bold text-black bottom-2 hover:cursor-pointer hover:rounded-4xl hover:bg-gray-600">Post</button></li>
+            <li className="w-3/4"></li>
           </ul>
+          <button className="bg-gray-600 rounded-full px-10 h-9 flex justify-items-center font-bold text-black py-1 hover:cursor-pointer hover:rounded-4xl hover:bg-gray-600 relative right-2">Post</button>
           </div>
+         
 
           <div className="line2 w-full border border-gray-800"></div>
           <div className="flex justify-center m-3"><div className="post text-blue-400 hover: cursor-pointer">Show 245 posts</div></div>
           <div className="line3 w-full border border-gray-800"></div>
-          <div className="content flex relative">
+          <div className="content flex relative justify-between">
+            <div className="flex">
             <div><span class="material-symbols-outlined m-2 hover:cursor-pointer" style={{ fontSize: "50px" }}>
               account_circle
             </span></div>
@@ -119,16 +119,20 @@ function App() {
               <div className="Cr7 text-sm text-gray-500 py-2.5">@cristianoCR7</div>
               <div className="dot py-0.5 text-gray-500">.</div>
               <div className="hr py-2 text-gray-500">10h</div>
-              <div className="py-2 relative left-40"><svg viewBox="0 0 33 32" aria-hidden="true" class="hover:cursor-pointer invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
               </div>
-              <div className="py-1.5 relative left-41"><span class="material-symbols-outlined">
+               </div>
+               <div className="flex gap-2 relative right-2">
+              <div className="py-2"><svg viewBox="0 0 33 32" aria-hidden="true" class="hover:cursor-pointer invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
+              </div>
+              <div className="py-1.5"><span class="material-symbols-outlined">
                 more_horiz
               </span></div>
-            </div>
+              </div>
+           
           </div>
           <div className="para px-10 relative bottom-9 left-6 hover:cursor-pointer">Cristiano Ronaldo is a Portuguese football legend known for his incredible goal-scoring, athleticism, dedication, and winning mentality. A five-time Ballon d’Or winner, he has achieved success with top clubs and the Portugal national team, inspiring millions of fans around the world.
           </div>
-          <div className="w-130 relative left-16 hover:cursor-pointer"><img className="rounded-2xl" src="https://www.aljazeera.com/wp-content/uploads/2014/01/2014113192511431734_20.jpeg?resize=1920%2C1440" alt="" /></div>
+          <div className="mt-3 hover:cursor-pointer"><img className="w-5/6 mx-20 object-cover rounded-2xl" src="https://www.aljazeera.com/wp-content/uploads/2014/01/2014113192511431734_20.jpeg?resize=1920%2C1440" alt="" /></div>
           <div><ul className="flex justify-between mx-16 text-gray-500 m-4 relative hover:cursor-pointer">
             <li className="flex text-sm gap-1"><span className="material-symbols-outlined" style={{ fontSize: "18px" }}>
               mode_comment
@@ -150,7 +154,8 @@ function App() {
             </span></li>
           </ul></div>
           <div className="line4 w-full border border-gray-800"></div>
-          <div className="content flex relative hover:cursor-pointer">
+          <div className="content flex justify-between hover:cursor-pointer">
+            <div className="flex">
             <div><span className="material-symbols-outlined m-2" style={{ fontSize: "50px" }}>
               account_circle
             </span></div>
@@ -162,17 +167,21 @@ function App() {
               <div className="Cr7 text-sm text-gray-500 py-2.5">@cillian_murphyR</div>
               <div className="dot py-0.5 text-gray-500">.</div>
               <div className="hr py-2 text-gray-500">2h</div>
-              <div className="py-2 relative left-40"><svg viewBox="0 0 33 32" aria-hidden="true" className="invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
+               </div>
               </div>
-              <div className="py-1.5 relative left-41"><span className="material-symbols-outlined">
+              <div className="flex gap-2 relative right-2">
+              <div className="py-2"><svg viewBox="0 0 33 32" aria-hidden="true" className="invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
+              </div>
+              <div className="py-1.5"><span className="material-symbols-outlined">
                 more_horiz
               </span></div>
-            </div>
+              </div>
+           
           </div>
           <div className="para px-10 relative bottom-9 left-6 hover:cursor-pointer">Cillian Murphy is an Irish actor known for his intense performances and versatile acting. He gained worldwide recognition as Thomas Shelby in *Peaky Blinders* and won the Academy Award for Best Actor for his role as J. Robert Oppenheimer in *Oppenheimer*.
 
           </div>
-          <div className="w-130 relative left-16 hover:cursor-pointer"><img className="rounded-2xl" src="https://cdn.webshopapp.com/shops/268192/files/433182622/tommy-shelby.jpg" alt="" /></div>
+          <div className="hover:cursor-pointer"><img className="rounded-2xl w-5/6 mx-20 object-cover " src="https://cdn.webshopapp.com/shops/268192/files/433182622/tommy-shelby.jpg" alt="" /></div>
           <div><ul className="flex justify-between mx-16 text-gray-500 m-4 relative hover:cursor-pointer">
             <li className="flex text-sm gap-1"><span className="material-symbols-outlined" style={{ fontSize: "18px" }}>
               mode_comment
@@ -194,7 +203,8 @@ function App() {
             </span></li>
           </ul></div>
           <div className="line5 w-full border border-gray-800"></div>
-          <div className="content flex relative hover:cursor-pointer">
+          <div className="content flex justify-between hover:cursor-pointer">
+             <div className="flex">
             <div><span className="material-symbols-outlined m-2 hover:cursor-pointer" style={{ fontSize: "50px" }}>
               account_circle
             </span></div>
@@ -206,18 +216,21 @@ function App() {
               <div className="Cr7 text-sm text-gray-500 py-2.5">@SunGodNika</div>
               <div className="dot py-0.5 text-gray-500">.</div>
               <div className="hr py-2 text-gray-500">21h</div>
-              <div className="py-2 relative left-43"><svg viewBox="0 0 33 32" aria-hidden="true" className="invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
               </div>
-              <div className="py-1.5 relative left-44"><span className="material-symbols-outlined">
+              </div>
+              <div className="flex gap-2 right-2 relative">
+              <div className="py-2"><svg viewBox="0 0 33 32" aria-hidden="true" className="invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
+              </div>
+              <div className="py-1.5"><span className="material-symbols-outlined">
                 more_horiz
               </span></div>
-            </div>
+              </div>
           </div>
           <div className="para px-10 relative bottom-9 left-6 hover:cursor-pointer">Monkey D. Luffy — a fearless pirate with an unbreakable spirit. He dreams of becoming the Pirate King, protects his friends no matter the cost, and never gives up, even when the odds are against him. 🏴‍☠️🔥
 
 
           </div>
-          <div className="w-130 relative left-16 hover:cursor-pointer"><img className="rounded-2xl" src="https://images.timesnownews.com/photo/msid-153560408/153560408.jpg?thumbsize=48050" alt="" /></div>
+          <div className="hover:cursor-pointer"><img className="rounded-2xl w-5/6 mx-20 object-cover" src="https://images.timesnownews.com/photo/msid-153560408/153560408.jpg?thumbsize=48050" alt="" /></div>
           <div><ul className="flex justify-between mx-16 text-gray-500 m-4 relative hover:cursor-pointer">
             <li className="flex text-sm gap-1"><span className="material-symbols-outlined" style={{ fontSize: "18px" }}>
               mode_comment
@@ -239,7 +252,8 @@ function App() {
             </span></li>
           </ul></div>
           <div className="line5 w-full border border-gray-800"></div>
-          <div className="content flex relative hover:cursor-pointer">
+          <div className="content flex justify-between hover:cursor-pointer">
+            <div className="flex">
             <div><span className="material-symbols-outlined m-2 hover:cursor-pointer" style={{ fontSize: "50px" }}>
               account_circle
             </span></div>
@@ -251,17 +265,21 @@ function App() {
               <div className="Cr7 text-sm text-gray-500 py-2.5">@Jin_Mori</div>
               <div className="dot py-0.5 text-gray-500">.</div>
               <div className="hr py-2 text-gray-500">14h</div>
-              <div className="py-2 relative left-63"><svg viewBox="0 0 33 32" aria-hidden="true" className="invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
               </div>
-              <div className="py-1.5 relative left-64"><span className="material-symbols-outlined">
+               </div>
+               <div className="flex relative right-2 gap-1">
+              <div className="py-2"><svg viewBox="0 0 33 32" aria-hidden="true" className="invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
+              </div>
+              <div className="py-1.5"><span className="material-symbols-outlined">
                 more_horiz
               </span></div>
-            </div>
+              </div>
+           
           </div>
           <div className="para px-10 relative bottom-9 left-6 hover:cursor-pointer">Jin Mori — a fearless fighter with an unstoppable spirit. 🥋🔥
             He fights for his friends, embraces every challenge, and never backs down from an opponent. Behind his carefree smile lies the strength and will of the legendary Monkey King. 🐒⚡
           </div>
-          <div className="w-130 relative left-16 hover:cursor-pointer"><img className="rounded-2xl" src="/Jin_mori.png" alt="" /></div>
+          <div className="hover:cursor-pointer"><img className="rounded-2xl w-5/6 mx-20 object-cover" src="/Jin_mori.png" alt="" /></div>
           <div><ul className="flex justify-between mx-16 text-gray-500 m-4 relative hover:cursor-pointer">
             <li className="flex text-sm gap-1"><span className="material-symbols-outlined" style={{ fontSize: "18px" }}>
               mode_comment
@@ -283,7 +301,8 @@ function App() {
             </span></li>
           </ul></div>
           <div className="line5 w-full border border-gray-800"></div>
-          <div className="content flex relative hover:cursor-pointer">
+          <div className="content flex justify-between hover:cursor-pointer">
+            <div className="flex">
             <div><span class="material-symbols-outlined m-2 hover:cursor-pointer" style={{ fontSize: "50px" }}>
               account_circle
             </span></div>
@@ -295,18 +314,21 @@ function App() {
               <div className="Cr7 text-sm text-gray-500 py-2.5">@Kurosaki_Ichigo</div>
               <div className="dot py-0.5 text-gray-500">.</div>
               <div className="hr py-2 text-gray-500">24h</div>
-              <div className="py-2 relative left-36"><svg viewBox="0 0 33 32" aria-hidden="true" className="invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
               </div>
-              <div className="py-1.5 relative left-37"><span className="material-symbols-outlined">
+              </div>
+              <div className="flex relative right-2 gap-2">
+              <div className="py-2"><svg viewBox="0 0 33 32" aria-hidden="true" className="invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
+              </div>
+              <div className="py-1.5"><span className="material-symbols-outlined">
                 more_horiz
               </span></div>
-            </div>
+              </div>
           </div>
           <div className="para px-10 relative bottom-9 left-6 hover:cursor-pointer">A warrior who carries the weight of protecting everyone he loves. ⚔️🔥
             He fights not for glory, but to protect those who matter to him. With an unbreakable will and the courage to face any enemy, he keeps moving forward no matter how difficult the battle becomes. 🖤
 
           </div>
-          <div className="w-130 relative left-16 hover:cursor-pointer"><img className="rounded-2xl h-200 w-150" src="/Bleach.jpg" alt="" /></div>
+          <div className="hover:cursor-pointer"><img className="rounded-2xl w-5/6 mx-20 object-cover" src="/Bleach.jpg" alt="" /></div>
           <div><ul className="flex justify-between mx-16 text-gray-500 m-4 relative hover:cursor-pointer">
             <li className="flex text-sm gap-1"><span className="material-symbols-outlined" style={{ fontSize: "18px" }}>
               mode_comment
@@ -329,9 +351,7 @@ function App() {
           </ul></div>
         </div>
       </div>
-      </div>
-      <div className="w-[30%]">
-      <div className="third shrink-0 sticky top-0 h-fit">
+      <div className="third shrink-0 sticky top-0 h-fit w-[30%] hidden lg:block">
         <div className="searchsomething sticky top-0 backdrop-blur z-2">
           <div className="search m-3 -my-4 rounded-full w-80 relative bottom-5"><span className="material-symbols-outlined top-10 relative left-3">
             search
@@ -492,8 +512,6 @@ function App() {
           </div>
         </div>
       </div>
-      </div>
-    </div>
     </div>
   )
 }
