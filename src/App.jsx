@@ -1,8 +1,10 @@
 function App() {
   return (
-    <div className="container flex w-91 justify-items-center">
-      <div className="first px-3 h-fit shrink-0 sticky top-0">
-        <div className="items flex-col m-4 space-y-4 text-xl">
+    <div className="w-full">
+    <div className="flex w-full justify-center">
+      <div className="w-[22%] shrink-0">
+      <div className="first mx-15 h-fit shrink-0 sticky top-0">
+        <div className="items flex-col  space-y-4 text-xl">
           <svg viewBox="0 0 24 24" aria-hidden="true" className="hover:cursor-pointer invert w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z"></path></g></svg>
           <ul className="space-y-4 relative">
             <li className="flex gap-3 font-bold hover:cursor-pointer"><span className="material-symbols-outlined">
@@ -44,7 +46,9 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="sec flex-1 border-x border-gray-800">
+      </div>
+      <div className="w-[48%]">
+      <div className="sec flex-1 border-x border-gray-800 min-w-0">
         <div className="itms relative">
           <div className="sticky top-0 backdrop-blur z-10">
             <ul className="flex px-4 py-1  m-1 justify-between text-gray-400 hover: cursor-pointer">
@@ -53,7 +57,7 @@ function App() {
               <li>Sports</li>
               <li>Tech</li>
               <li>Health</li>
-              <li><span className="material-symbols-outlined">
+              <li><span class="material-symbols-outlined">
                 add
               </span></li>
             </ul>
@@ -104,20 +108,20 @@ function App() {
           <div className="flex justify-center m-3"><div className="post text-blue-400 hover: cursor-pointer">Show 245 posts</div></div>
           <div className="line3 w-full border border-gray-800"></div>
           <div className="content flex relative">
-            <div><span className="material-symbols-outlined m-2 hover:cursor-pointer" style={{ fontSize: "50px" }}>
+            <div><span class="material-symbols-outlined m-2 hover:cursor-pointer" style={{ fontSize: "50px" }}>
               account_circle
             </span></div>
             <div className="flex gap-1 relative hover:cursor-pointer">
               <div className="font-bold py-2 hover:cursor-pointer hover:underline">Cristiano Ronaldo</div>
-              <div className="verify text-blue-600 py-2"><span className="material-symbols-outlined">
+              <div className="verify text-blue-600 py-2"><span class="material-symbols-outlined">
                 verified
               </span></div>
               <div className="Cr7 text-sm text-gray-500 py-2.5">@cristianoCR7</div>
               <div className="dot py-0.5 text-gray-500">.</div>
               <div className="hr py-2 text-gray-500">10h</div>
-              <div className="py-2 relative left-40"><svg viewBox="0 0 33 32" aria-hidden="true" className="hover:cursor-pointer invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
+              <div className="py-2 relative left-40"><svg viewBox="0 0 33 32" aria-hidden="true" class="hover:cursor-pointer invert w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd"><g><path d="M12.745 20.54l10.97-8.19c.539-.4 1.307-.244 1.564.38 1.349 3.288.746 7.241-1.938 9.955-2.683 2.714-6.417 3.31-9.83 1.954l-3.728 1.745c5.347 3.697 11.84 2.782 15.898-1.324 3.219-3.255 4.216-7.692 3.284-11.693l.008.009c-1.351-5.878.332-8.227 3.782-13.031L33 0l-4.54 4.59v-.014L12.743 20.544m-2.263 1.987c-3.837-3.707-3.175-9.446.1-12.755 2.42-2.449 6.388-3.448 9.852-1.979l3.72-1.737c-.67-.49-1.53-1.017-2.515-1.387-4.455-1.854-9.789-.931-13.41 2.728-3.483 3.523-4.579 8.94-2.697 13.561 1.405 3.454-.899 5.898-3.22 8.364C1.49 30.2.666 31.074 0 32l10.478-9.466"></path></g></svg>
               </div>
-              <div className="py-1.5 relative left-41"><span className="material-symbols-outlined">
+              <div className="py-1.5 relative left-41"><span class="material-symbols-outlined">
                 more_horiz
               </span></div>
             </div>
@@ -280,12 +284,12 @@ function App() {
           </ul></div>
           <div className="line5 w-full border border-gray-800"></div>
           <div className="content flex relative hover:cursor-pointer">
-            <div><span className="material-symbols-outlined m-2 hover:cursor-pointer" style={{ fontSize: "50px" }}>
+            <div><span class="material-symbols-outlined m-2 hover:cursor-pointer" style={{ fontSize: "50px" }}>
               account_circle
             </span></div>
             <div className="flex gap-1 relative">
               <div className="font-bold py-2 hover:underline">Kurosaki Ichigo</div>
-              <div className="verify text-blue-600 py-2"><span className="material-symbols-outlined">
+              <div className="verify text-blue-600 py-2"><span class="material-symbols-outlined">
                 verified
               </span></div>
               <div className="Cr7 text-sm text-gray-500 py-2.5">@Kurosaki_Ichigo</div>
@@ -325,7 +329,9 @@ function App() {
           </ul></div>
         </div>
       </div>
-      <div className="third w-full shrink-0 sticky top-0 h-fit">
+      </div>
+      <div className="w-[30%]">
+      <div className="third shrink-0 sticky top-0 h-fit">
         <div className="searchsomething sticky top-0 backdrop-blur z-2">
           <div className="search m-3 -my-4 rounded-full w-80 relative bottom-5"><span className="material-symbols-outlined top-10 relative left-3">
             search
@@ -486,6 +492,8 @@ function App() {
           </div>
         </div>
       </div>
+      </div>
+    </div>
     </div>
   )
 }
